@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Management System</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/notepad.css' %}">  <!-- Link to the Notepad CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Personal Management System</h1>
+            <nav>
+                <!-- Add navigation links here -->
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </nav>
+        </div>
+    </header>
+
+    {% block content %}
+    <main>
+        <!-- Other content goes here -->
+    
+        {% include 'notepad.html' %}  <!-- Include the General Notepad component -->
+    </main>
+    {% endblock %}
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Personal Management System. All rights reserved.</p>
+            <!-- Add general information and links here -->
+        </div>
+    </footer>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

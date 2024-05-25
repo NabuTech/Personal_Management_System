@@ -1,0 +1,57 @@
+/* variables.css */
+
+/* Brief Instructions:
+   - Primary Colors: Headers, buttons, and important elements.
+   - Secondary Colors: Accents and highlights.
+   - Accent Colors: Call-to-action elements.
+   - Background Colors: Main background and section backgrounds.
+   - Text Colors: Main text and secondary text.
+   - Link Colors: Hyperlinks.
+   - Button Colors: Button backgrounds and text. */
+
+:root {
+    /* Primary Colors */
+    --primary: #ff0066;
+    --primary-light: #ff66cc;
+    --primary-dark: #cc0052;
+
+    /* Secondary Colors */
+    --secondary: #00ccff;
+    --secondary-light: #66e0ff;
+    --secondary-dark: #0099cc;
+
+    /* Accent Colors */
+    --accent: #ffcc00;
+    --accent-light: #ffee99;
+    --accent-dark: #cca300;
+
+    /* Background Colors */
+    --background: #000000;
+    --background-light: #333333;
+    --background-dark: #000000;
+
+    /* Text Colors */
+    --text: #ffffff;
+    --text-light: #cccccc;
+    --text-dark: #ffffff;
+
+    /* Link Colors */
+    --link: #ff0066;
+    --link-hover: #cc0052;
+
+    /* Button Colors */
+    --button: #ff0066;
+    --button-text: #ffffff;
+    --button-hover: #cc0052;
+    --button-text-hover: #ffffff;
+
+     /* Typography */
+    --font-family: 'Press Start 2P', cursive;
+    --font-size-base: 16px;
+ 
+    /* Spacing */
+    --spacing-small: 8px; /* Use for small gaps between elements */
+    --spacing-medium: 16px; /* Use for standard spacing between elements */
+    --spacing-large: 24px; /* Use for larger spacing between sections or major elements */
+}
+

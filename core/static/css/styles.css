@@ -1,0 +1,89 @@
+/* styles.css */
+
+@import 'variables.css';
+
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic Styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background);
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium);
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: var(--spacing-medium) 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center; /* Center the content horizontally */
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: inline-block; /* Make the nav element behave like a block element */
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: var(--spacing-medium);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: var(--spacing-medium) 0;
+    padding-top: calc(var(--spacing-medium) + 60px);
+    padding-bottom: calc(var(--spacing-medium) + 60px);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-medium);
+}
+
+.app {
+    background-color: var(--background-light);
+    padding: var(--spacing-medium);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: var(--spacing-medium) 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Add this style for completed tasks */
+.completed {
+    text-decoration: line-through;
+}
