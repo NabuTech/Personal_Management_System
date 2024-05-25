@@ -1,0 +1,102 @@
+/* Adjustments for notepad container */
+.notepad {
+    background-color: var(--primary-light); /* Change background color to primary light */
+    padding: var(--spacing-medium);
+    border-radius: 10px;
+    margin-top: var(--spacing-medium);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    width: 25%; /* Set width to 25% of the viewport */
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: stretch; /* Stretch child elements to container width */
+}
+
+/* Add styling for the input box */
+.notepad input[type="text"] {
+    padding: 8px; /* Add padding to the input box */
+    border: 1px solid var(--border-color); /* Add border */
+    border-radius: 5px; /* Add border radius */
+    margin-bottom: var(--spacing-small); /* Add margin bottom */
+    font-size: 16px; /* Set font size */
+    transition: border-color 0.3s ease; /* Add transition effect */
+    background-color: var(--primary-light);
+    color: var(--dark-secondary);
+}
+
+/* Add focus style for the input box */
+.notepad input[type="text"]:focus {
+    border-color: var(--accent); /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+
+
+/* Styles for task list */
+#task-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+/* Adjustments for individual tasks */
+#task-list li {
+    display: flex; /* Use flexbox for task items */
+    align-items: center; /* Center items vertically */
+    margin-bottom: var(--spacing-small); /* Add space between tasks */
+    position: relative; /* Add position for delete icon */
+}
+
+/* Hover effect for entire task item */
+#task-list li:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style for task name */
+#task-list li span:first-child {
+    flex-grow: 1; /* Allow task name to grow and take up remaining space */
+    color: var(--text-dark); /* Set color for task name */
+    font-weight: bold; /* Make task name bold */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+/* Hover effect for task name */
+#task-list li span:first-child:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style for delete icon */
+.delete-task {
+    margin-left: var(--spacing-medium); /* Add space between task name and delete icon */
+    font-size: 24px; /* Increase font size for delete icon */
+    color: var(--text-light); /* Set color for delete icon */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+/* Hover effect for delete icon */
+.delete-task:hover {
+    color: var(--accent); /* Change color on hover */
+}
+
+
+#task-list li.completed span:first-child {
+    text-decoration: line-through; /* Apply strikethrough for completed tasks */
+    color: var(--accent);
+}
+
+/* Add styling for the Add Task button */
+.notepad #add-task {
+    padding: 8px 12px; /* Add padding */
+    border: none; /* Remove border */
+    background-color: var(--accent); /* Set background color */
+    color: var(--background-light); /* Set text color */
+    font-size: 20px; /* Set font size */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Hover effect for the Add Task button */
+.notepad #add-task:hover {
+    background-color: var(--accent-dark); /* Darker color on hover */
+}
